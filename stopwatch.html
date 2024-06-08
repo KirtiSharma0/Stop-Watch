@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: xx-large;
+            font-family:  Verdana, Geneva, Tahoma, sans-serif;
+            font: 800; 
+         }
+         body{
+            background-color: rgb(58, 124, 119);
+             color: rgb(249, 249, 250);
+             display: flex;
+             flex-direction: column; 
+             justify-content: center;
+             align-items: center;
+             min-height: 100vh;
+         }
+         .stopwatch{
+            background-color: rgb(3, 23, 31); 
+            justify-content: center;
+            align-items: center; 
+            padding: 20px 24px;
+            border-radius: 10px;  
+         }
+         .timer{
+            font-size: 60px;
+            font-weight: 600;
+         }
+         .button{
+            margin-top: 50px;
+         }
+         .btn{
+            font-size: 20px;
+            padding: 12px 24px; 
+            background-color: rgb(24, 27, 29);
+            color: rgb(145, 235, 235);
+            font-style: italic;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-inline: 12px;
+            border-radius: 8px;
+         }
+         .btn:hover{
+            background-color: rgb(191, 240, 240);
+            color: rgb(24, 27, 29);  
+         }
+    </style>
+</head>
+<body>
+    <div class="stopwatch">
+        <div class="timerdisplay">00 : 00 : 00</div>
+    </div>
+    <div class="button">
+        <button id="stop" class="btn">STOP </button>
+        <button id="start" class="btn">START </button>
+        <button id="reset" class="btn">RESTART</button>
+    </div>
+
+    <script src="stopwatch.js"></script> 
+
+</body>
+</html>
